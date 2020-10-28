@@ -19,3 +19,13 @@ while True:
     elif (answer == '2'):
         filledSquare()
  
+def emptySquare():
+    t = turtle.Turtle()
+
+    for i in range(4):
+        t.forward(50)
+        t.right(90)     # Rotate clockwise by 90 degrees
+
+def emptyCircle():
+    t = turtle.Turtle()
+    t.circle(100)
