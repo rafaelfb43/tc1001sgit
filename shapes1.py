@@ -29,3 +29,21 @@ def emptySquare():
 def emptyCircle():
     t = turtle.Turtle()
     t.circle(100)
+
+def filledSquare():
+    s = int(input("Enter the length of the side of the square: "))
+    col = input("Enter the color name or hex value of color(# RRGGBB): ")
+    t = turtle.Turtle()
+    t.fillcolor(col)
+    t.begin_fill()
+    for i in range(4):
+        t.forward(s)
+        t.right(90)     # Rotate clockwise by 90 degrees
+    t.end_fill()
+
+def filledCircle():
+    t = turtle.Turtle()
+    t.fillcolor('red')  # set the fillcolor
+    t.begin_fill()  # start the filling color
+    t.circle(100)
+    t.end_fill()
